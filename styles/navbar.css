@@ -2,7 +2,16 @@
     --black: #212121;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html,
+body {
+    font-size: 10px;
+}
 
 a {
     text-decoration: none;
@@ -14,11 +23,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     font-family: 'Ubuntu', sans-serif;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 #nav-items {
@@ -35,7 +43,17 @@ a {
     opacity: .65;
 }
 
+#logo {
+    width: 6.5rem;
+    height: 6.5rem;
+    align-self: center;
+}
+#logo-img {
+    width: 100%;
+    height: auto;
+}
 .nav-item:nth-child(1) a {
+    opacity: 1;
     border: 1px solid #fff;
     padding: 1rem 2rem;
 }
@@ -49,21 +67,6 @@ a {
 .nav-item a:hover {
     transition: .3s ease-in;
     opacity: 1;
-}
-
-.active a {
-    opacity: 1;
-}
-
-#logo {
-    width: 6.5rem;
-    height: 6.5rem;
-    align-self: center;
-}
-
-#logo-img {
-    width: 100%;
-    height: auto;
 }
 
 @media (max-width: 98rem) {
