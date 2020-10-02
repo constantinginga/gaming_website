@@ -46,7 +46,7 @@
 #upcomingEvents{
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 10rem;
+    top: 12rem;
 }
 .upcomingEvent{
     border-bottom:2px solid white;
