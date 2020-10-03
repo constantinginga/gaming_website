@@ -1,0 +1,170 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#apply {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#apply-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0 1.5rem 0;
+}
+
+#h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#h1 span {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #ac0404;
+    text-decoration: underline;
+    letter-spacing: .1rem;
+}
+
+#disclaimer {
+    font-style: italic;
+    text-align: center;
+    margin: 1rem 0;
+    color: rgba(0, 0, 0, .15);
+}
+
+#group-photo {
+    width: 100%;
+    height: 25rem;
+    background: url("../images/group-photo.jpg") no-repeat fixed center;
+    z-index: -1;
+    filter: blur(.2rem);
+}
+
+#app-form {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#app-form label,
+#app-form p {
+    font-size: 2.5rem;
+    margin: .5rem 0;
+}
+
+#app-form label:has(input[type='radio']) {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.info-group {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group:nth-child(1) {
+    width: 60%;
+    margin-right: 3rem;
+}
+
+.group:nth-child(2) {
+    width: 20%;
+}
+
+.group input {
+    width: 100%;
+}
+
+#name,
+#age,
+#gender,
+#occupation,
+#why {
+    padding: .25rem .5rem;
+    font-size: 1.8rem;
+}
+
+#name::placeholder,
+#age::placeholder,
+#why::placeholder,
+.default {
+    font-style: italic;
+}
+
+#age::placeholder {
+    text-align: center;
+}
+
+#gender,
+#occupation {
+    flex: 0 50%;
+}
+
+#gender {
+    margin-right: 2rem;
+}
+
+#occupation {
+    margin-left: 2rem;
+}
+
+#hours {
+    display: flex;
+    flex-direction: column;
+    margin-top: .75rem;
+}
+
+#hours label {
+    font-size: 1.8rem;
+}
+
+#hours input[type='radio'],
+input[type='checkbox'] {
+    margin-right: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: middle;
+}
+
+#why {
+    resize: none;
+    margin: 1.5rem 0;
+    height: 10rem;
+}
+
+#app-form p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#robot-label,
+#btn {
+    font-size: 1.8rem !important;
+}
+
+#btn {
+    width: 10rem;
+    height: 4rem;
+    align-self: center;
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--black);
+    transition: .3s ease-out;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+    transition: .3s ease-in;
+}

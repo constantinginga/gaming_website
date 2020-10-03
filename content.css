@@ -1,0 +1,71 @@
+.imgForContentDiv {
+    float: left;
+    height: 100%;
+    margin-bottom: 0;
+}
+.imgForContentDiv img{
+    background-color: black;
+    margin: 5%;
+    height: 90%;
+    width: 90%;
+}
+.textForContentDiv {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.text{
+    height: 100%;
+    padding: 1%;
+}
+.text p{
+    font-size: 20px;
+    text-indent: 50px;
+    padding-top: 1rem;
+}
+.clubForContentDiv{
+    width: 74%;
+    margin: 2%;
+    margin-bottom: 0;
+    border:0.5px solid lightgray;
+    height: 49.239rem;
+
+}
+#upcomingEvents{
+    width: 20%;
+    float:right;
+    background-color: #d3d3d3;
+    margin: 2%;
+    margin-bottom: 0;
+}
+#upcomingEvents h1{
+    background-color: white;
+    text-align: center;
+
+}
+#upcomingEvents{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 12rem;
+}
+.upcomingEvent{
+    border-bottom:2px solid white;
+}
+#upcomingEvents img{
+    margin: 5%;
+    width: 90%;
+}
+#upcomingEvents h2{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+body{
+    background-color: white;
+}
+h1{
+    color: #212121;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 40px;
+    font-weight: 500;
+}
