@@ -1,3 +1,5 @@
+/* HOVER OVER SHREK FOR A SURPRISE ;) */
+
 :root {
     --black: #212121;
 }
@@ -11,6 +13,10 @@
 html,
 body {
     font-size: 10px;
+}
+
+body {
+    height: 100vh;
 }
 
 a {
@@ -27,6 +33,7 @@ a {
     font-family: 'Ubuntu', sans-serif;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #nav-items {
@@ -44,14 +51,17 @@ a {
 }
 
 #logo {
+    display: block;
     width: 6.5rem;
     height: 6.5rem;
     align-self: center;
 }
+
 #logo-img {
     width: 100%;
     height: auto;
 }
+
 .nav-item:nth-child(1) a {
     opacity: 1;
     border: 1px solid #fff;
@@ -69,6 +79,49 @@ a {
     opacity: 1;
 }
 
-@media (max-width: 98rem) {
-    /* create burger menu */
+.active a {
+    opacity: 1;
+    border-bottom: 1px solid #fff;
 }
+
+#logo:hover {
+    animation: rotate .25s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(1.2) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.2) rotate(90deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+
+    75% {
+        transform: scale(1.2) rotate(270deg);
+    }
+
+    100% {
+        transform: scale(1.2) rotate(360deg);
+    }
+}
+
+/* Bad idea */
+/* @media (max-width: 96rem) {
+
+    #navbar {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    #nav-items {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 75rem) {} */
