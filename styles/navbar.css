@@ -13,10 +13,7 @@
 html,
 body {
     font-size: 10px;
-}
-
-body {
-    height: 100vh;
+    height: 100%;
 }
 
 a {
@@ -24,6 +21,7 @@ a {
 }
 
 #navbar {
+    width: 100%;
     background-color: var(--black);
     color: #fff;
     display: flex;
@@ -110,18 +108,26 @@ a {
     }
 }
 
-/* Bad idea */
-/* @media (max-width: 96rem) {
 
+@media screen and (max-width: 960px) {
     #navbar {
+        height: 100%;
+        width: 14rem;
         flex-direction: column;
-        padding-top: 1rem;
-        padding-bottom: 3rem;
+        position: fixed;
+        justify-content: flex-start;
     }
 
     #nav-items {
-        margin-top: 2rem;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .nav-item a {
+        font-size: 2.2rem;
     }
 }
-
-@media (max-width: 75rem) {} */
