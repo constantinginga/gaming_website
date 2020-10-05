@@ -60,3 +60,10 @@ site_blog_items {
 .site_blog_items {
     margin-bottom: 2rem;
 }
+
+/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY */
+@media screen and (max-width: 960px) {
+    .news_blog {
+        margin-left: 14rem;
+    }
+}
