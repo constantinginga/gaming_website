@@ -25,9 +25,8 @@
 }
 .clubForContentDiv{
     width: 74%;
-    margin: 2%;
-    margin-bottom: 0;
-    border:0.5px solid lightgray;
+    margin: 2% 2% 0;
+    border:1px solid lightgray;
     height: 49.239rem;
 
 }
@@ -35,8 +34,7 @@
     width: 20%;
     float:right;
     background-color: #d3d3d3;
-    margin: 2%;
-    margin-bottom: 0;
+    margin: 2% 2% 0;
 }
 #upcomingEvents h1{
     background-color: white;
