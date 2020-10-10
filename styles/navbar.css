@@ -14,6 +14,7 @@ html,
 body {
     font-size: 10px;
     height: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -28,7 +29,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
-    font-family: 'Ubuntu', sans-serif;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -62,7 +62,7 @@ a {
 
 .nav-item:nth-child(1) a {
     opacity: 1;
-    border: 1px solid #fff;
+    border: .1rem solid #fff;
     padding: 1rem 2rem;
 }
 
@@ -79,7 +79,7 @@ a {
 
 .active a {
     opacity: 1;
-    border-bottom: 1px solid #fff;
+    border-bottom: .1rem solid #fff;
 }
 
 #logo:hover {
