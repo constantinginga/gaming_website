@@ -21,25 +21,25 @@
 .main_header {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
     width: 75%;
+    font-size: 3rem;
     margin-top: 2rem;
+}
+
+.main_header a {
     color: wheat;
 }
 
-.main_header:not(:active):hover {
-    margin-bottom: 1rem;
-    transform: scale(1.2);
-    transition-duration: .3s;
-    cursor: pointer;
-    color: white;
-}
-
-.main_header:not(:active) {
+.main_header a:not(:active):hover {
     margin-bottom: 1rem;
     transform: scale(1.1);
     transition-duration: .3s;
-    cursor: pointer;
+    color: white;
+}
+
+.main_header a:not(:active) {
+    margin-bottom: 1rem;
+    transition-duration: .3s;
 }
 
 .main_paragraph {
@@ -62,16 +62,17 @@
 .main_img_div:hover {
     transform: scale(.95) translateY(-.5rem);
     box-shadow: 0 2.5rem 4rem rgba(black, .5);
-    transition-duration: 0.2s;
-    cursor: pointer;
+    transition: ease-in .2s;
     margin-top: 1rem;
 }
 
+.main_img_div {
+    transition: ease-out .2s;
+}
+
 .main_img_div:not(:active):hover {
-    transform: scale(1.02) translateY(-.5rem);
+    transform: scale(1) translateY(-.5rem);
     box-shadow: 0 2.5rem 4rem rgba(black, .5);
-    transition-duration: 0.2s;
-    cursor: pointer;
     margin-top: 1rem;
 }
 
@@ -85,25 +86,22 @@
 .site_header {
     font-size: 2rem;
     width: 75%;
+}
+
+.site_header a {
     color: white;
 }
 
-.site_header:hover {
+.site_header:not(:active) {
     transform: scale(.95) translateY(-.5rem);
     transition-duration: .2s;
-    cursor: pointer;
-    color: rgb(26, 23, 23);
     margin-bottom: 1rem;
-    color: white;
 }
 
 .site_header:not(:active):hover {
-    transform: scale(1.03) translateY(-.5rem);
+    transform: scale(1) translateY(-.5rem);
     transition-duration: .2s;
-    cursor: pointer;
-    color: rgb(26, 23, 23);
     margin-bottom: .5rem;
-    color: white;
 }
 
 .site_blog_items {
@@ -122,20 +120,17 @@
     border-radius: 1rem;
 }
 
-.site_img_div:hover {
+.site_img_div {
     transform: scale(.98);
-    transition-duration: 0.2s;
+    transition: .2s ease-in;
     box-shadow: 0 2.5rem 4rem rgba(black, black, black, .5);
     margin-top: .5rem;
-    cursor: pointer;
 }
 
 .site_img_div:not(:active):hover {
-    transform: scale(1.01);
-    transition-duration: 0.2s;
+    transition: .2s ease-out;
     box-shadow: 0 2.5rem 4rem rgba(black, black, black, .5);
     margin-top: .5rem;
-    cursor: pointer;
 }
 
 .main_img_div,
