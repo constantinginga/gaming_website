@@ -1,27 +1,23 @@
-body{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-h1, p 
-{
+h1,
+p {
     text-align: center;
 }
 
 h1 {
     font-size: 400%;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 h1:after {
     content: '';
     background: white;
     display: block;
-    height: 3px;
-    width: 150px;
-    margin: 10px auto;
+    height: .3rem;
+    width: 15rem;
+    margin: 1rem auto;
 }
 
 p {
@@ -29,16 +25,16 @@ p {
 }
 
 .member {
-    width: 600px;
-    height: 520px;
+    width: 60rem;
+    height: 52rem;
     margin: auto;
-    border: 3px solid black;
-    padding: 10px;
+    border: .3rem solid black;
+    padding: 1rem;
     background-color: grey;
 }
 
-.background{
+.background {
     background-image: linear-gradient(to right bottom, #0000007e, #2d312d),
-    url(../images/background_img.jpg);
+        url(../images/background_img.jpg);
     background-size: cover;
 }
