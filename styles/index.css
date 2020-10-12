@@ -61,26 +61,22 @@
 
 .main_img_div:hover {
     transform: scale(.95) translateY(-.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(black, .5);
     transition: ease-in .2s;
     margin-top: 1rem;
 }
 
-.main_img_div {
-    transition: ease-out .2s;
-}
+
 
 .main_img_div:not(:active):hover {
     transform: scale(1) translateY(-.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(black, .5);
     margin-top: 1rem;
+    transition: ease-out .2s;
 }
 
 .main_img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0 1.5rem 3rem rgba(black, 0.5);
 }
 
 .site_header {
@@ -92,16 +88,15 @@
     color: white;
 }
 
-.site_header:not(:active) {
-    transform: scale(.95) translateY(-.5rem);
-    transition-duration: .2s;
-    margin-bottom: 1rem;
+.site_header:not(:active):hover{
+    transform: scale(1.02) translateY(-.5rem);
+    transition: ease-out .2s;
 }
 
-.site_header:not(:active):hover {
-    transform: scale(1) translateY(-.5rem);
-    transition-duration: .2s;
-    margin-bottom: .5rem;
+.site_header:hover {
+    transform: scale(.95) translateY(-.5rem);
+    transition: ease-in .2s;
+
 }
 
 .site_blog_items {
@@ -120,22 +115,16 @@
     border-radius: 1rem;
 }
 
-.site_img_div {
-    transform: scale(.98);
-    transition: .2s ease-in;
-    box-shadow: 0 2.5rem 4rem rgba(black, black, black, .5);
-    margin-top: .5rem;
-}
+
 
 .site_img_div:not(:active):hover {
-    transition: .2s ease-out;
-    box-shadow: 0 2.5rem 4rem rgba(black, black, black, .5);
-    margin-top: .5rem;
+    transform: scale(1.02) translateY(-.5rem);
+    transition: ease-out .2s;
 }
 
-.main_img_div,
-.site_img_div {
-    margin: 1.5rem 0;
+.site_img_div:hover {
+    transform: scale(.95) translateY(-.5rem);
+    transition: ease-in .2s;
 }
 
 .site_paragraph {
