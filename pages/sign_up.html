@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <form action="#" method="post" id="app-form">
+            <form action="#" method="POST" id="app-form">
                 <div class="info-group">
                     <div class="group">
                         <label for="name">Name</label>
@@ -51,14 +51,24 @@
                     </div>
                 </div>
                 <div class="info-group">
+                    <div class="group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required placeholder="Your email">
+                    </div>
+                    <div class="group">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone" required placeholder="45 XX XX XX XX">
+                    </div>
+                </div>
+                <div class="info-group">
                     <select name="gender" id="gender" required>
-                        <option value="default" class="default" selected disabled>Gender</option>
+                        <option value="" class="default" selected disabled>Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">I don't know</option>
                     </select>
-                    <select name="occupation" id="occupation">
-                        <option value="default" class="default" selected disabled>Occupation</option>
+                    <select name="occupation" id="occupation" required>
+                        <option value="" class="default" selected disabled>Occupation</option>
                         <option value="unemployed">Unemployed</option>
                         <option value="full-time">Full-time</option>
                         <option value="part-time">Part-time</option>
@@ -93,7 +103,7 @@
                 <label for="robot-check" id="robot-label"><input type="checkbox" name="robot-check" id="robot-check"
                         required>
                     I'm not a fucking robot</label>
-                <button type="submit" id="btn">Let me in</button>
+                <input type="submit" value="Let me in" id="btn">
             </form>
         </div>
     </div>
@@ -107,10 +117,10 @@
             <div class="footer-flex-container">
                 <h2>Follow us</h2>
                 <div id="social-media-icons">
-                    <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square" ></i> </a>
+                    <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> </a>
                     <a href="https://twitter.com/"> <i class="fab fa-twitter-square"></i> </a>
                     <a href="https://www.instagram.com/"> <i class="fab fa-instagram-square"></i> </a>
-                    <a href="https://www.youtube.com/"> <i  class="fab fa-youtube"></i> </a>
+                    <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> </a>
                 </div>
             </div>
             <div class="footer-flex-container">
