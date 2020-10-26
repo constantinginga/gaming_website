@@ -134,11 +134,3 @@
     align-items: flex-start;
     color: white;
 }
-
-
-/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY */
-@media screen and (max-width: 960px) {
-    .news_blog {
-        margin-left: 14rem;
-    }
-}
