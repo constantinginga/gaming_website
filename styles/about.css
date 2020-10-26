@@ -86,10 +86,3 @@ h1 {
     display: inline-block;
     float: left;
 }
-
-/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY */
-@media screen and (max-width: 960px) {
-    .about_page {
-        margin-left: 14rem;
-    }
-}
