@@ -80,10 +80,3 @@ h1 {
     font-size: 4rem;
     font-weight: 500;
 }
-
-/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY */
-@media screen and (max-width: 960px) {
-    .clubForContentDiv {
-        margin-left: 14rem;
-    }
-}
