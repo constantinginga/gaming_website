@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <script src="https://kit.fontawesome.com/24c9827f38.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <title>Content</title>
 </head>
 
 <body>
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/shrekerino-logo.png" alt="Image of Shrek smoking a blunt" id="logo-img">
-        </div>
-        <div id="nav-items">
-            <div class="nav-item"><a href="../index.html">Home</a></div>
-            <div class="nav-item"><a href="about.html">About</a></div>
-            <div class="nav-item"><a href="members.html">Members</a></div>
-            <div class="nav-item active"><a href="content.html">Content</a></div>
-            <div class="nav-item"><a href="sign_up.html">Sign Up</a></div>
-        </div>
-    </div>
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-md bg-dark">
+        <!-- HOVER OVER SHREK FOR A SURPRISE ;) -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="navbar-brand" id="logo">
+            <img src="../images/shrekerino-logo.png" class="d-inline-block" alt="Image of Shrek smoking a blunt" id="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small-screen" aria-controls="navbar-small-screen" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-small-screen">
+                <div class="navbar-nav" id="nav-items">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="members.html">Members</a>
+                    <a class="nav-item nav-link active" href="content.html">Content</a>
+                    <a class="nav-item nav-link" href="sign_up.html">Sign Up</a>
+                </div>
+            </div>
+        </nav>
     <div id="upcomingEvents">
         <div>
             <h1>Upcoming Events</h1>
