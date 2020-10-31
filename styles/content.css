@@ -14,6 +14,9 @@ h1 {
     font-size: 4rem;
     font-weight: 500;
 }
+.containerForClub{
+    float: left;
+}
 .clubForContentDiv h1 {
     margin-bottom: 15px;
 }
