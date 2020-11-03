@@ -5,33 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="../styles/about%20-%20max%20width%20991px.css">
+    <link rel="stylesheet" media="screen and (max-width: 1199px)" href="../styles/about%20-%20min%20992%20max%20width%201199px.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="../styles/about-min%20width%201200px.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <script src="https://kit.fontawesome.com/24c9827f38.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
     <title>About</title>
 </head>
 
 <body>
-    <div id="navbar">
-        <div id="logo">
-            <img src="../images/shrekerino-logo.png" alt="Image of Shrek smoking a blunt" id="logo-img">
-        </div>
-        <div id="nav-items">
-            <div class="nav-item"><a href="../index.html">Home</a></div>
-            <div class="nav-item active"><a href="about.html">About</a></div>
-            <div class="nav-item"><a href="members.html">Members</a></div>
-            <div class="nav-item"><a href="content.html">Content</a></div>
-            <div class="nav-item"><a href="sign_up.html">Sign Up</a></div>
-        </div>
-    </div>
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-md bg-dark">
+        <!-- HOVER OVER SHREK FOR A SURPRISE ;) -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="navbar-brand" id="logo">
+            <img src="../images/shrekerino-logo.png" class="d-inline-block" alt="Image of Shrek smoking a blunt" id="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small-screen" aria-controls="navbar-small-screen" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-small-screen">
+                <div class="navbar-nav" id="nav-items">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link active" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="members.html">Members</a>
+                    <a class="nav-item nav-link" href="content.html">Content</a>
+                    <a class="nav-item nav-link" href="sign_up.html">Sign Up</a>
+                </div>
+            </div>
+        </nav>
     <div class="about_page">
-
-<div>
+<div class="row">
+    <div class="col-xl-3 col-lg-6 col-md-12">
         <img src="../images/ricardo.gif" class="ricardo1" alt="ma boi ricardo" /></div>
+    <div class="col-xl-3 col-lg-6 col-md-12">
         <div id="hist-text">
-            <h1>A little history of the club</h1>
-            <div class="hist-text">
+        <h1>A little history of the club</h1>
+            
                 <p> The club was founded in 1996 by the bois (The picture below shows the founders of the club during
                     their primal years), who have known each other from the beggining of times. Yes, i didn't stutter,
                     of times!</p>
@@ -42,15 +55,16 @@
                 <p>The purpose of the club, which has stayed the same during all these years, is to meet up, play video
                     games and most importantly have fun!. In the picture below can be seen of the first LAN parties that
                     has ever occured in the existence of the mankind.</p>
+            
+            
+    <img src="../images/about_ducttape.jpg" class="ducttape_guy" alt="The duct tape guy" />
             </div>
+    </div>    
 
-            <img src="../images/about_ducttape.jpg" class="ducttape_guy" alt="The duct tape guy" />
-        </div>
-
-
+<div class="col-xl-3 col-lg-6 col-md-12">
         <div id="aboutus-text">
             <h1>About us now and in the future!</h1>
-            <div class="aboutus-text">
+    
                 <p>Something very interesting that will take probably about the half of the page.Hopefully noone will
                     notice that I was too lazy to write something interesting here. Totally not noticable and I will
                     have totally clear concious when I will hand this in without any kind of fear that I could fail. Not
@@ -60,34 +74,36 @@
                     levels of “insect fragments” and other icky-sounding contaminants that are safe for humans to
                     consume in specific foods? Nice right? Eh. What else... Ah! Here is photo of someones feet. Enjoy!
                 </p>
-            </div>
+            
 
             <img src="../images/about_feet.jpg" class="feet_image" alt="some random feet" />
+            </div>
         </div>
-
-       <div> <img src="../images/ricardo.gif" class="ricardo2" alt="ma boi ricardo" /></div>
+<div class="col-xl-3 col-lg-6 col-md-12">
+       <img src="../images/ricardo.gif" class="ricardo2" alt="ma boi ricardo" /></div>
 
     </div>
-    <div id="footer">
-        <div id="footer-flex-box">
-            <div class="footer-flex-container">
+</div>
+        
+ 
+        <div class="container col-12 " id="footer">
+        <div class="row" id="footer-flex-box">
+            <div id="location" class="col  col-md-4 footer-flex-container">
                 <h2>Location</h2>
                 <p>Chr M Østergaards Vej 4<br>8700 Horsens</p>
-
             </div>
-            <div class="footer-flex-container">
+            <div class="col col-md-4 footer-flex-container" >
                 <h2>Follow us</h2>
                 <div id="social-media-icons">
-                    <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square" ></i> </a>
+                    <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> </a>
                     <a href="https://twitter.com/"> <i class="fab fa-twitter-square"></i> </a>
                     <a href="https://www.instagram.com/"> <i class="fab fa-instagram-square"></i> </a>
-                    <a href="https://www.youtube.com/"> <i  class="fab fa-youtube"></i> </a>
+                    <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> </a>
                 </div>
             </div>
-            <div class="footer-flex-container">
+            <div id="Contact" class="col col-md-4 footer-flex-container">
                 <h2>Contact</h2>
                 <p>Email: viaesport@via.uc <br>Phone: 50175049</p>
-
             </div>
         </div>
         <div id="copyright">

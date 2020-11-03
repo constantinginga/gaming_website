@@ -220,20 +220,6 @@ input[type='checkbox'] {
     transition: .3s ease-in;
 }
 
-/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY */
-@media screen and (max-width: 960px) {
-    #content {
-        margin-left: 14rem;
-    }
-}
-
-
-/* Sorry Nicolai, I know you said not to make it responsive, but I have
-nothing better to do with my time. */
-
-/* Please enjoy this amazing Shrek and don't get too mad :D */
-
-
 /*                   ,-'     `._ 
                  ,'           `.        ,-. 
                ,'               \       ),.\ 

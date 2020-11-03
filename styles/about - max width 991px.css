@@ -1,0 +1,101 @@
+.about_page {
+    margin-top: 2rem !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-content: space-around !important;
+}
+.row {
+    width: 100% !important;
+}
+
+.ricardo1 {
+    width: 75% !important;
+    height: auto;
+    display: inline-block;
+    margin-left: 12.5% !important;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#hist-text {
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 12.5% !important;
+    margin-top: 2rem;
+    height: 66.5rem;
+    font-size: 1.25rem;
+    width: 75% !important;
+    display: inline-block;
+    
+}
+
+.hist-text {
+    font-size: 2rem;
+    text-align: justify;
+    width: auto;
+}
+
+.hist-text img {
+    display: block;
+    margin: 0;
+}
+
+.bois_picture {
+    width: 75%;
+    height: 25rem;
+}
+
+.ducttape_guy {
+    width: 75%;
+    height: 25rem;
+}
+
+#aboutus-text {
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 12.5% !important;
+    margin-top: 2rem;
+    padding: 0;
+    height: 48rem;
+    font-size: 1.25rem;
+    width: 75% !important;
+    display: inline-block;
+    float: left;
+}
+
+.aboutus-text {
+    font-size: 2rem;
+    text-align: justify;
+    width: auto;
+}
+
+.aboutus-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+.feet_image {
+    width: 75%;
+    height: 25rem;
+    margin-left: 12.5%;
+}
+
+.ricardo2 {
+    width: 75% !important;
+    height: auto;
+    display: inline-block;
+    margin-left: 12.5% !important;
+    margin-bottom: 2.5% !important;
+    
+}
+
+/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY 
+@media screen and (max-width: 960px) {
+    .about_page {
+        margin-left: 14rem;
+    }
+}*/

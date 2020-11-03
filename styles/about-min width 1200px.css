@@ -5,13 +5,15 @@
     flex-direction: row;
     align-content: space-around;
 }
+.row{
+    width: 100%;
+}
 
 .ricardo1 {
-    width: 46rem;
+    width: 100%;
     height: 80rem;
     display: inline-block;
-    float: left;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 h1 {
@@ -22,12 +24,12 @@ h1 {
 #hist-text {
     align-items: center;
     box-sizing: border-box;
-    margin-left: 7rem;
-    margin-top: 2rem;
-    height: 80rem;
-    width: 40rem;
+    margin-left: 3rem;
+    height: 40rem;
+    font-size: 1.25rem;
+    width: 100%;
     display: inline-block;
-    float: left;
+    
 }
 
 .hist-text {
@@ -42,12 +44,12 @@ h1 {
 }
 
 .bois_picture {
-    width: 40rem;
+    width: 100%;
     height: 25rem;
 }
 
 .ducttape_guy {
-    width: 40rem;
+    width: 100%;
     height: 25rem;
 }
 
@@ -55,10 +57,10 @@ h1 {
     align-items: center;
     box-sizing: border-box;
     margin-left: 2rem;
-    margin-top: 2rem;
     padding: 0;
-    height: 80rem;
-    width: 40rem;
+    height: 20rem;
+    font-size: 1.25rem;
+    width: 100%;
     display: inline-block;
     float: left;
 }
@@ -75,21 +77,21 @@ h1 {
 }
 
 .feet_image {
-    width: 40rem;
+    width: 100%;
     height: 25rem;
 }
 
 .ricardo2 {
-    margin-left: 7rem;
-    width: 46rem;
+    margin: auto;
+    width: 100%;
     height: 80rem;
     display: inline-block;
-    float: left;
+    
 }
 
-/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY */
+/* THIS IS TO MAKE THE RESPONSIVE NAVBAR DISPLAY PROPERLY 
 @media screen and (max-width: 960px) {
     .about_page {
         margin-left: 14rem;
     }
-}
+}*/
