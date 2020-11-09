@@ -1,0 +1,114 @@
+
+
+.home {
+    background-image: linear-gradient(to right bottom, #0000007e, #2d312d),
+        url(../images/background_img.jpg);
+    background-size: cover;
+
+}
+
+.main_header {
+    
+margin-left: 3rem;
+margin-top: 2rem;
+}
+
+
+.main_header a {
+    font-size: 3rem;
+  
+    color: wheat;
+    text-decoration: none;
+
+}
+
+#myCarousel{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.main_header :not(:active):hover {
+    transform: scale(1.01);
+    transition: ease-out .2s;
+    color: white;
+}
+
+.main_header a:not(:active) {
+    transform: scale(.95);
+    transition: ease-in .2s;
+}
+
+.main_paragraph {
+    font-size: 2rem;
+    width: 75%;
+    color: white;
+    margin-left: 2rem;
+}
+
+
+
+.site_header a {
+    font-size: 2rem;
+
+    color: white;
+    text-decoration: none;
+}
+
+.site_header:not(:active):hover{
+    transform: scale(1.02) translateY(-.5rem);
+    transition: ease-out .2s;
+}
+
+.site_header:hover {
+    transform: scale(.95) translateY(-.5rem);
+    transition: ease-in .2s;
+
+}
+
+.site_blog_items {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.site_img_div {
+    width: 67%;
+}
+
+.site_img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+
+
+.site_img_div:not(:active):hover {
+    transform: scale(1.02);
+    transition: ease-out .2s;
+}
+
+.site_img_div:hover {
+    transform: scale(.95);
+    transition: ease-in .2s;
+}
+
+.site_paragraph {
+    font-size: 1.5rem;
+    width: 65%;
+    
+    color: white;
+}
+
+
+@media screen and (max-width: 999px) {
+   #myCarousel{
+       margin-left: 0;
+   }
+
+   .site_blog_items{
+       margin-left: 2rem;
+   }
+
+  
+}

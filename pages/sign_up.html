@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/sign_up.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="https://kit.fontawesome.com/24c9827f38.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-md bg-dark">
+        <!-- HOVER OVER SHREK FOR A SURPRISE ;) -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="navbar-brand" id="logo">
+            <img src="../images/shrekerino-logo.png" class="d-inline-block" alt="Image of Shrek smoking a blunt" id="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-small-screen" aria-controls="navbar-small-screen" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-small-screen">
+                <div class="navbar-nav" id="nav-items">
+                    <a class="nav-item nav-link" href="../index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="members.html">Members</a>
+                    <a class="nav-item nav-link" href="content.html">Content</a>
+                    <a class="nav-item nav-link active" href="sign_up.html">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    <div id="content">
+        <div id="apply">
+            <div id="group-photo"></div>
+            <div id="apply-txt">
+                <h1 id="h1">Do <span>you</span> want to be a part of the most amazing* club on the entire planet?</h1>
+                <div id="disclaimer">
+                    <p>*We do not actually guarantee that this is the most amazing club on the entire planet, or that it
+                        is
+                        even
+                        a
+                        real club at all.</p>
+                    <p>Please do not contact us with your complaints. We really don't care about you at all.</p>
+                </div>
+            </div>
+
+            <form action="#" method="POST" id="app-form">
+                <div class="info-group">
+                    <div class="group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your stupid name" required>
+                    </div>
+                    <div class="group">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" min="18" max="99" required placeholder="Your age">
+                    </div>
+                </div>
+                <div class="info-group">
+                    <div class="group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required placeholder="Your email">
+                    </div>
+                    <div class="group">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone" required placeholder="45 XX XX XX XX">
+                    </div>
+                </div>
+                <div class="info-group">
+                    <select name="gender" id="gender" required>
+                        <option value="" class="default" selected disabled>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">I don't know</option>
+                    </select>
+                    <select name="occupation" id="occupation" required>
+                        <option value="" class="default" selected disabled>Occupation</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="student">Student</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                </div>
+                <label for="hours">Time spent gaming</label>
+                <div id="hours">
+                    <label for="five-hrs">
+                        <input type="radio" name="hours" id="five-hrs">
+                        < 5 hrs/week </label> <label for="fiveten-hrs"><input type="radio" name="hours"
+                                id="fiveten-hrs">
+                            5-10 hrs/week
+                    </label>
+                    <label for="twenty-hrs">
+                        <input type="radio" name="hours" id="twenty-hrs">
+                        20 hrs/week
+                    </label>
+                    <label for="forty-hrs">
+                        <input type="radio" name="hours" id="forty-hrs">
+                        40+ hrs/week
+                    </label>
+                    <label for="twentyfive-hrs">
+                        <input type="radio" name="hours" id="twentyfive-hrs">
+                        25 hrs/day
+                    </label>
+                </div>
+                <textarea name="why" id="why"
+                    placeholder="Please tell us why you want to join (we don't really care)"></textarea>
+                <p>Prove you're not a robot</p>
+                <label for="robot-check" id="robot-label"><input type="checkbox" name="robot-check" id="robot-check"
+                        required>
+                    I'm not a fucking robot</label>
+                <input type="submit" value="Let me in" id="btn">
+            </form>
+        </div>
+    </div>
+    <div class="container col-12 " id="footer">
+        <div class="row" id="footer-flex-box">
+            <div id="location" class="col  col-md-4 footer-flex-container">
+                <h2>Location</h2>
+                <p>Chr M Østergaards Vej 4<br>8700 Horsens</p>
+            </div>
+            <div class="col col-md-4 footer-flex-container" >
+                <h2>Follow us</h2>
+                <div id="social-media-icons">
+                    <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> </a>
+                    <a href="https://twitter.com/"> <i class="fab fa-twitter-square"></i> </a>
+                    <a href="https://www.instagram.com/"> <i class="fab fa-instagram-square"></i> </a>
+                    <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> </a>
+                </div>
+            </div>
+            <div id="Contact" class="col col-md-4 footer-flex-container">
+                <h2>Contact</h2>
+                <p>Email: viaesport@via.uc <br>Phone: 50175049</p>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>©Via E-Sport club <br> Made possible by 1st group</p>
+        </div>
+    </div>
+</body>
+
+</html>
